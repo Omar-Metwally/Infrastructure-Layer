@@ -30,4 +30,6 @@ public partial class ProductViewModel
     public string? Image4 { get; set; }
 
     public string? Description { get; set; }
+
+    public string? Phone { get; set; }
 }
