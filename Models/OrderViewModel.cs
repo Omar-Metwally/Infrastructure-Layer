@@ -1,6 +1,6 @@
 ﻿namespace Infrastructure_Layer.Models;
 
-public partial class Order
+public partial class OrderViewModel
 {
     public int OrderId { get; set; }
 
@@ -8,13 +8,19 @@ public partial class Order
 
     public int ProductId { get; set; }
 
+    public string ProductName { get; set; }
+
+    public string MeasureOfScaleName { get; set; }
+
+    public string CategoryName { get; set; } = null!;
+
     public int Qty { get; set; }
 
     public double Total { get; set; }
 
     public DateTime OrderDate { get; set; } = DateTime.Now!;
 
-    public virtual Customer Customer { get; set; } = null!;
+    public string? Image1 { get; set; }
 
-    public virtual Product Product { get; set; } = null!;
+    public bool NewOrUsed { get; set; }
 }
