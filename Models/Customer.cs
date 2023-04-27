@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Infrastructure_Layer.Models;
+﻿namespace Infrastructure_Layer.Models;
 
 public partial class Customer
 {
@@ -24,6 +21,8 @@ public partial class Customer
     public string? CreditDebitCard { get; set; }
 
     public bool? Admin { get; set; }
+
+    public string? Cookie { get; set; }
 
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 

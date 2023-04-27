@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq.Expressions;
 
 namespace Infrastructure_Layer.Repository
 {
-    public interface IBaseRepository<T> where T : class 
+    public interface IBaseRepository<T> where T : class
     {
         T GetByID(int id);
 
@@ -25,8 +20,8 @@ namespace Infrastructure_Layer.Repository
 
         T? Index();
 
-        List<object> GetQuery(Expression<Func<T, bool>> filter = null,Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,string includeProperties = "");
+        List<object> GetQuery(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "");
     }
-    
+
 }
 

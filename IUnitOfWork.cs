@@ -1,10 +1,5 @@
 ﻿using Infrastructure_Layer.Models;
 using Infrastructure_Layer.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure_Layer
 {
@@ -18,6 +13,6 @@ namespace Infrastructure_Layer
 
         void Save();
 
-        IBaseRepository<List<object>> objects{ get; }
-}
+        IBaseRepository<List<object>> objects { get; }
+    }
 }

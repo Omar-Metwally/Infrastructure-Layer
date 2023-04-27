@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Infrastructure_Layer.Models;
+﻿namespace Infrastructure_Layer.Models;
 
 public partial class CartViewModel
 {
@@ -24,4 +21,5 @@ public partial class CartViewModel
 
     public string? Image1 { get; set; }
 
+    public double Total { get; set; }
 }
