@@ -23,4 +23,6 @@ public partial class OrderViewModel
     public string? Image1 { get; set; }
 
     public bool NewOrUsed { get; set; }
+
+    public string? Description { get; set; }
 }

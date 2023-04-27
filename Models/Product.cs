@@ -18,7 +18,7 @@ public partial class Product
 
     public bool NewOrUsed { get; set; }
 
-    public DateTime SignupDate { get; set; }
+    public DateTime SignupDate { get; set; } = DateTime.Now;
 
     public string? Image1 { get; set; }
 
@@ -36,5 +36,5 @@ public partial class Product
 
     public virtual MeasuresOfScale MeasureOfScale { get; set; } = null!;
 
-    public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+    public virtual ICollection<OrderdProduct> OrderdProducts { get; set; } = new List<OrderdProduct>();
 }

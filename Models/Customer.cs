@@ -16,7 +16,7 @@ public partial class Customer
 
     public string Password { get; set; } = null!;
 
-    public DateTime CreateDate { get; set; }
+    public DateTime CreateDate { get; set; } = DateTime.Now!;
 
     public string? CreditDebitCard { get; set; }
 
