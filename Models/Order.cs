@@ -1,4 +1,6 @@
-﻿namespace Infrastructure_Layer.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Infrastructure_Layer.Models;
 
 public partial class Order
 {
