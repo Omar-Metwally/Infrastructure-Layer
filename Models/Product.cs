@@ -8,27 +8,27 @@ public partial class Product
 
     public int MeasureOfScaleId { get; set; }
 
-    public string ProductName { get; set; } = null!;
+    public string ProductName { get; set; } = "No name";
 
-    public bool Instock { get; set; }
+    public bool Instock { get; set; } = false;
 
-    public int InstockQty { get; set; }
+    public int InstockQty { get; set; } = 0;
 
-    public double Price { get; set; }
+    public double Price { get; set; } = 0.0;
 
-    public bool NewOrUsed { get; set; }
+    public bool NewOrUsed { get; set; } = true;
 
     public DateTime SignupDate { get; set; } = DateTime.Now;
 
-    public string? Image1 { get; set; }
+    public string? Image1 { get; set; } = "No Image";
 
-    public string? Image2 { get; set; }
+    public string? Image2 { get; set; } = "No Image";
 
-    public string? Image3 { get; set; }
+    public string? Image3 { get; set; } = "No Image";
 
-    public string? Image4 { get; set; }
+    public string? Image4 { get; set; } = "No Image";
 
-    public string? Description { get; set; }
+    public string? Description { get; set; } = "No Description";
 
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
