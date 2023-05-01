@@ -29,4 +29,5 @@ public partial class ProductViewModel
     public string? Description { get; set; }
 
     public string? Phone { get; set; }
+    public int CategoryId { get; set; }
 }
