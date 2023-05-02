@@ -25,5 +25,6 @@ public partial class OrderViewModel
     public bool NewOrUsed { get; set; }
 
     public string? Description { get; set; }
+
     public string CustomerName { get; set; }
 }

@@ -22,4 +22,11 @@ public partial class CartViewModel
     public string? Image1 { get; set; }
 
     public double Total { get; set; }
+
+    public string? Area { get; set; }
+
+    public string? Streat { get; set; }
+
+    public string? House { get; set; }
+
 }

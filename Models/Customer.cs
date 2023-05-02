@@ -48,6 +48,12 @@ public partial class Customer
 
     public string? Cookie { get; set; }
 
+    public string? Area { get; set; }
+
+    public string? Streat { get; set; }
+
+    public string? House { get; set; }
+
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();

@@ -1,4 +1,6 @@
-﻿namespace Infrastructure_Layer.Models;
+﻿using System.Drawing.Drawing2D;
+
+namespace Infrastructure_Layer.Models;
 
 public partial class Product
 {
@@ -7,6 +9,8 @@ public partial class Product
     public int CategoryId { get; set; }
 
     public int MeasureOfScaleId { get; set; }
+
+    public int BrandId { get; set; }
 
     public string ProductName { get; set; } = "No name";
 
@@ -20,6 +24,8 @@ public partial class Product
 
     public DateTime SignupDate { get; set; } = DateTime.Now;
 
+    public string Size { get; set; } = null!;
+
     public string? Image1 { get; set; } = "No Image";
 
     public string? Image2 { get; set; } = "No Image";
@@ -28,7 +34,9 @@ public partial class Product
 
     public string? Image4 { get; set; } = "No Image";
 
-    public string? Description { get; set; } = "No Description";
+    public string? Description { get; set; }
+
+    public virtual Brand Brand { get; set; } = null!;
 
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 

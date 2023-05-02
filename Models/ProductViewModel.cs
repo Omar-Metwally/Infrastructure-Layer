@@ -26,6 +26,8 @@ public partial class ProductViewModel
 
     public string? Image4 { get; set; } = "No Image";
 
-    public string? Description { get; set; } = "No Description";
-
+    public string? Description { get; set; }
+    public string Size { get; set; }
+    public string? BrandName { get; set; }
+    public int BrandId { get; set; }
 }
