@@ -21,6 +21,7 @@ namespace Infrastructure_Layer.Repository
         T? Index();
 
         List<object> GetQuery(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "");
+
     }
 
 }

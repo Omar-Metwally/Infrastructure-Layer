@@ -1,13 +1,7 @@
 ﻿namespace Infrastructure_Layer.Models;
 
-public partial class CartViewModel
+public partial class CartViewModel : Cart
 {
-
-    public int CustomerId { get; set; }
-
-    public int ProductId { get; set; }
-
-    public int? Qty { get; set; }
 
     public string ProductName { get; set; }
 
