@@ -22,4 +22,12 @@ public partial class OrderViewModel : Order
     public string? Description { get; set; }
 
     public string CustomerName { get; set; } = "Error No customer name";
+
+    public string Brand { get; set; }
+
+    public string Size { get; set; }
+
+    public DateTime OrderDate { get; set; }
+	public string Phone { get; set; }
+	public string Location { get; set; }
 }
