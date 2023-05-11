@@ -8,3 +8,4 @@ public partial class MeasuresOfScale
 
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
 }
+

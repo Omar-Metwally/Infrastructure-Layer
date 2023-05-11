@@ -42,17 +42,9 @@ public partial class Customer
 
     public DateTime CreateDate { get; set; } = DateTime.Now!;
 
-    public string? CreditDebitCard { get; set; }
-
     public bool? Admin { get; set; }
 
     public string? Cookie { get; set; }
-
-    public string? Area { get; set; }
-
-    public string? Streat { get; set; }
-
-    public string? House { get; set; }
 
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
