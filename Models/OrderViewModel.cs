@@ -27,9 +27,9 @@ public partial class OrderViewModel : Order
 
     public string Size { get; set; }
 
-	public string Phone { get; set; }
+    public string Phone { get; set; }
 
-	public string Location { get; set; }
+    public string Location { get; set; }
 
     public bool Visa { get; set; }
 }

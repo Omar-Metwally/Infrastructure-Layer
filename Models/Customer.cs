@@ -4,7 +4,7 @@ namespace Infrastructure_Layer.Models;
 
 public partial class Customer
 {
-    
+
     public int? CustomerId { get; set; }
     [Required(ErrorMessage = "Please enter your first name")]
     [MinLength(3, ErrorMessage = "A name must be at least 3 letters")]

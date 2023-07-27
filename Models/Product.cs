@@ -1,6 +1,4 @@
-﻿using System.Drawing.Drawing2D;
-
-namespace Infrastructure_Layer.Models;
+﻿namespace Infrastructure_Layer.Models;
 
 public partial class Product
 {
