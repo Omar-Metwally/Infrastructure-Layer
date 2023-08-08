@@ -6,6 +6,8 @@ namespace Infrastructure_Layer.Repository
     {
         T GetByID(int id);
 
+        List <T> GetByIDAll(int id, int id2);
+
         IEnumerable<T> GetAll();
 
         T Find(Expression<Func<T, bool>> match);
@@ -17,6 +19,8 @@ namespace Infrastructure_Layer.Repository
         T? Details(int? id);
 
         T? Delete(int? id);
+
+        T? Delete(T entity);
 
         T? Index();
 

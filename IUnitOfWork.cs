@@ -11,6 +11,10 @@ namespace Infrastructure_Layer
 
         IBaseRepository<Cart> Carts { get; }
 
+        IBaseRepository<Order> Orders { get; }
+
+        IBaseRepository<OrderdProduct> OrderdProducts { get; }
+
         void Save();
 
         IBaseRepository<List<object>> objects { get; }
